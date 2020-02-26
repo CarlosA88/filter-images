@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Items from "./Items"; // load up the information of Items
+import "./index.css";
 
 class App extends Component {
   constructor(props) {
@@ -35,13 +36,7 @@ class App extends Component {
     for (const item in Items) {
       list.push(Items[item].name);
     }
-    return (
-      <div>
-        <ul>
-          <li>{list}</li>
-        </ul>
-      </div>
-    );
+    return <div className="background-blue white-text">{list}</div>;
   }
 }
 
